@@ -13,6 +13,7 @@
       color: #fff;
     }
 
+    /* --- Header --- */
     header {
       background: #161b22;
       padding: 15px 40px;
@@ -52,6 +53,28 @@
       color: #58a6ff;
     }
 
+    /* --- Cards --- */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .card {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 10px;
+      border: 1px solid #30363d;
+      text-align: left;
+    }
+
+    .card h3 {
+      margin-top: 0;
+      color: #58a6ff;
+    }
+
+    /* Botão WhatsApp */
     .btn-whats {
       display: inline-block;
       margin-top: 20px;
@@ -76,24 +99,19 @@
       border-top: 1px solid #30363d;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 30px;
+    .demo-btn {
+      display: inline-block;
+      padding: 12px 20px;
+      background: #58a6ff;
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-weight: bold;
+      margin-top: 15px;
     }
 
-    .card {
-      background: #161b22;
-      padding: 20px;
-      border-radius: 10px;
-      border: 1px solid #30363d;
-      text-align: left;
-    }
-
-    .card h3 {
-      margin-top: 0;
-      color: #58a6ff;
+    .demo-btn:hover {
+      background: #79b8ff;
     }
   </style>
 </head>
@@ -107,6 +125,7 @@
       <a href="#sobre">Sobre</a>
       <a href="#servicos">Serviços</a>
       <a href="#projetos">Projetos</a>
+      <a href="#demo">Demo IA</a>
       <a href="#contato">Contato</a>
     </nav>
   </header>
@@ -115,128 +134,4 @@
   <section id="home">
     <h1>CHCCTech – Tecnologia e Automação</h1>
     <p>
-      Soluções inteligentes em automação, inteligência artificial, n8n, integrações e sistemas personalizados
-      para empresas e negócios.
-    </p>
-
-    <a class="btn-whats" href="https://wa.me/5511982210303" target="_blank">
-      Fale conosco no WhatsApp 📱
-    </a>
-  </section>
-
-  <!-- SOBRE -->
-  <section id="sobre">
-    <h2>Sobre a CHCCTech</h2>
-    <p>
-      A CHCCTech é especializada em soluções de automação, integração de sistemas, chatbots inteligentes,
-      inteligência artificial aplicada e infraestrutura para pequenos e médios negócios.
-    </p>
-    <p>
-      Trabalhamos com n8n, APIs, Google Sheets, agentes de IA customizados, servidores Linux e projetos de automação real que ajudam empresas a reduzir custos e aumentar produtividade.
-    </p>
-  </section>
-
-  <!-- SERVIÇOS -->
-  <section id="servicos">
-    <h2>Serviços</h2>
-
-    <div class="cards">
-      <div class="card">
-        <h3>🤖 Agentes de IA Personalizados</h3>
-        <p>
-          Desenvolvimento de assistentes virtuais para WhatsApp, Instagram, Web e atendimento automatizado.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🔄 Automação com n8n</h3>
-        <p>
-          Construção de fluxos inteligentes com integração a WhatsApp, Google Sheets, APIs e sistemas internos.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>📊 Integrações Google Sheets</h3>
-        <p>
-          Dashboards, automação de vendas, CRM, relatórios, planilhas inteligentes e sistemas comerciais.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🖥️ Servidores e Infraestrutura</h3>
-        <p>
-          Configuração de VPS, Docker, Zorin OS, Cloudflare, DNS, túnel seguro e hospedagem.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🌐 Sites e Landing Pages</h3>
-        <p>
-          Criação de sites modernos, responsivos e integrados com automações e IA.
-        </p>
-      </div>
-    </div>
-  </section>
-
-  <!-- PROJETOS -->
-  <section id="projetos">
-    <h2>Projetos</h2>
-
-    <div class="cards">
-
-      <div class="card">
-        <h3>🍓 Dulce – Assistente Virtual Sweet Cake</h3>
-        <p>
-          Chatbot profissional de pré-vendas com cardápio completo, IA generativa, integração com WhatsApp,
-          coleta de pedidos e registro automático.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🥬 Joelma – Verduras do Sítio</h3>
-        <p>
-          Assistente automatizada para pedidos semanais de hortifruti, com lista de produtos, preços e
-          integração com Google Sheets.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>🏠 Assistente de Imóveis</h3>
-        <p>
-          Chatbot para pré-atendimento imobiliário, captação de clientes, envio automático de imóveis
-          conforme perfil e registro de leads.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>⚙️ Automação Comercial</h3>
-        <p>
-          Sistemas n8n para empresas: financeiro, pedidos, integração com APIs, CRM e relatórios automáticos.
-        </p>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- CONTATO -->
-  <section id="contato">
-    <h2>Contato</h2>
-    <p>Fale diretamente com a CHCCTech pelo WhatsApp (11)98221-0303 - Carlos Henrique:</p>
-
-    <a class="btn-whats" href="https://wa.me/5511982210303" target="_blank">
-      Abrir WhatsApp 📱
-    </a>
-
-    <p style="margin-top:20px;opacity:0.7;">
-      Ou envie um email: <br>  
-      <strong>chccicolo@gmail.com</strong>
-    </p>
-  </section>
-
-  <footer>
-    © CHCCTech – Tecnologia e Automação • Todos os direitos reservados.
-  </footer>
-
-</body>
-</html>
-
+      Soluções inteligentes em automação, IA, n8n, integrações e sistemas personalizados para empresas.
